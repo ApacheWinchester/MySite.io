@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url("https://use.typekit.net/euz1eqv.css");
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+
+body{
+  background:#23272A;
+}
+
+
+
+.bgnav {
+  position: absolute;
+  top:50%;
+  height: 200px;
+  width: 200px;
+  background:#c01b1b;
+  z-index: 9;
+
+
+}
+
+.logonav {
+  position: absolute;
+  top: -15px;
+  left: -70px;
+  width: 350px;
+  height: 120px;
+}
+
+header {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 102px;
+  z-index: 10;
+  background-image: url(/src/img/menutexture2.png);
+  background-position: center top;
+  background-size: auto 250px;
+  background-repeat: repeat-x;
+}
+
+header .inner {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+header .logo {
+  display: block;
+  width: 76px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  text-align: center;
+}
+
+header .logo img {
+  width: 45px;
+  margin-top: 10px;
+}
+
+header nav {
+  display: none;
+}
+
+header nav a {
+  font-family: "Arial", serif;
+  font-size: 12px;
+  color: #8c8c8e;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  margin: 0 18px;
+  position: relative;
+  top: 22px;
+  left: 42px;
+}
+
+header nav a.active, header nav a:hover {
+  color: white;
+}
+
+@media screen and (min-width: 800px) {
+  header nav {
+    display: block;
+  }
+   
+ 
+
+}
+
+
+
+
+
+
+
+
+header .burger {
+  display: block;
+  position: relative;
+  top: -6px;
+  padding-left: 30px;
+}
+
+header .burger:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 2px;
+  background: white;
+  box-shadow: 0 12px 0 0 white, 0 6px 0 0 white;
+}
+
+
+@media screen and (min-width: 800px) {
+  header .burger {
+    display: none;
+  }
+}
+
+.espa{
+  margin: 89.4px;
+}
+
+
+
+.videohome{
+  position: absolute; /* Posicionamento absoluto para ocupar toda a div */
+  width: 100%; /* 100% da largura da div pai */
+  height: 100%; /* 100% da altura da div pai */
+  object-fit: cover; /* Redimensiona o vídeo para cobrir toda a área da div */
+  z-index: 10;
+}
+
+/* Area text's do subnavbar*/
+
+.h1sub{
+    font-size: 60px;
+    position: absolute;
+    top: 23%; /* Centraliza verticalmente */
+    left:20%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza tanto vertical quanto horizontalmente */
+    text-align: center;
+    color: #fff; /* Cor do texto */
+    z-index: 12; 
+}
+
+.h1subb{
+  font-size: 60px;
+  position: absolute;
+  top: 35%; /* Centraliza verticalmente */
+  left:15%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Centraliza tanto vertical quanto horizontalmente */
+  text-align: center;
+  color: #fff; /* Cor do texto */
+  z-index: 12; 
+}
+
+
+.h1sub2{
+    font-size: 60px;
+    position: absolute;
+    top: 43%; /* Centraliza verticalmente */
+    left:-1%; /* Centraliza horizontalmente */
+    text-align: center;
+    color: #fff; /* Cor do texto */
+    z-index: 12;
+    margin-left: 70px; /* Margem esquerda de 20px */
+    margin-right: 70px; 
+}
+
+.h1subb2{
+  font-size: 60px;
+  position: absolute;
+  top: 54%; /* Centraliza verticalmente */
+  left: -1.2%; /* Centraliza horizontalmente */
+  text-align: center;
+  color: #fff; /* Cor do texto */
+  z-index: 12;
+  margin-left: 70px; /* Margem esquerda de 20px */
+  margin-right: 70px; 
+}
+
+
+.h2sub{
+    font-family: 'Julius Sans One', sans-serif;
+    position: absolute;
+    top: 72%; /* Centraliza verticalmente */
+    left: 14.5%; /* Centraliza horizontalmente */
+    font-size: 14px;
+    transform: translate(-50%, -50%); /* Centraliza tanto vertical quanto horizontalmente */
+    text-align: center;
+    color: #fff; /* Cor do texto */
+  z-index: 12;
+}
+
+.subheader{
+  background-color:#e40000;
+  position: relative; /* Para que os elementos internos se posicionem em relação a esta div */
+  width: 100%; /* 100% da largura da div pai */
+  height: 80vh; /* 100% da altura da janela de visualização */
+  overflow: hidden;
+  z-index: 11;
+
+}
+
+
+
+/*Rodapé */
+.lane{
+  z-index: 20;
+  position: absolute;
+  left: 2%;
+  width: 1860px;
+  height: 1px;
+  background:white;
+
+}
+
+.dire{
+  position: absolute;
+  left:2%;
+  top:64%;
+  font-family: "Arial", serif;
+  font-size: 18px;
+  color:#23272A;
+}
+
+.insta{
+  z-index: 20;
+  position: absolute;
+  left:94%;
+  top:64%;
+  font-family: "Arial", serif;
+  font-size: 18px;
+  color:#23272A;
+}
+
+.instaimg{
+  width: 35px;
+}
+
+.zap{
+  z-index: 20;
+  position: absolute;
+  left:97%;
+  top:64%;
+  font-family: "Arial", serif;
+  font-size: 18px;
+  color:#23272A;
+}
+
+.zapimg{
+  width: 35px;
+}
